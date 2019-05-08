@@ -1,5 +1,5 @@
 """
-WSGI config for binary_j4 project.
+WSGI config for meu_primeiro_projeto project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'binary_j4.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'meu_primeiro_projeto.settings')
 
 application = get_wsgi_application()
