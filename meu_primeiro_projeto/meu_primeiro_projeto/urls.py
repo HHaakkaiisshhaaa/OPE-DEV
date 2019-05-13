@@ -19,14 +19,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from produto import urls as produto_urls
+from produtos import urls as produtos_urls
 
 
 
 urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='registration/login.html'), name="login"),
     path('logout/', auth_views.LogoutView.as_view(), name="logout"),
-    path('pessoa/', include(produto_urls)),
+    path('produto/', include(produtos_urls)),
     path('admin/', admin.site.urls),
 
 ]

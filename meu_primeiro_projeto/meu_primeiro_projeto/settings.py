@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'produto',
+    'produtos',
+    
 ]
 
 MIDDLEWARE = [
@@ -140,7 +141,7 @@ STATICFILES_DIRS = ['statics',]
 
 # Login
 LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = 'lista_pessoas'
+LOGIN_REDIRECT_URL = 'home'
  
 # Logout
 LOGOUT_URL = '/logout/'

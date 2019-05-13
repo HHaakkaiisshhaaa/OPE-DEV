@@ -1,16 +1,36 @@
 body{
-    background-color: white;
+
 }
 
 .form{
     width: 450px;
     height: 450px;
     padding: 10px;
-    background-color: grey;
 
 
 }
 
-.linha_produto{
-    background-color: grey;
+h1{
+    text-align: center;
+    font-family: 'font-size:30px;cursor:pointer';
+}
+
+.login{
+    margin-left: 300px; 
+    margin-right:300px;
+    margin-top: 200px;  
+    text-align: center;
+
+}
+
+.logout{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+i{
+    float: right;
+    position: relative;
 }

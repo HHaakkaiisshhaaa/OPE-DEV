@@ -9,13 +9,12 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="{% url 'home' %}">home</a>
     <form method="POST">
        
         {% csrf_token %}  
-            <div class="form">{{ form.as_p }}<br></div> 
-           
-
-            <button type="submit">Gravar</button>
+        <div class="form">{{ form.as_p }}</div> 
+        <button type="submit">Gravar</button>
         
     </form>
 </body>
