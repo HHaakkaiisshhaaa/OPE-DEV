@@ -9,15 +9,21 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="{% url 'new_pessoas'%}"> Novo Cliente</a>
-    
-    <ul>
-    {% for i in pessoas %}
-        <li class="linha">{{i.primeiro_nome}} {{i.ultimo_nome}} </li><br>
-    {% endfor %}  
-    </ul>
+    <h1>Lista de Produtos</h1>
+   
+        <ul>
+        {% for i in pessoas %}
+            <li class="linha_produto" >{{i.primeiro_nome}} {{i.ultimo_nome}}<a href="{% url 'update_pessoas' i.id %}"><button>Editar</button></a></li><br>
+            <a href="{% url 'delete_pessoas' i.id %}"><button>Deletar</button></a></li><br>
+          
+        {% endfor %}  
+        </ul>
 
+        
+
+    <a href="{% url 'new_pessoas'%}"><button> Novo Cliente</button></a>
     
-    <h2></h2>
+    
+
 </body>
 </html>

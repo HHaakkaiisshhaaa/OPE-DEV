@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'clientes',
+    'produto',
 ]
 
 MIDDLEWARE = [
@@ -136,6 +136,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    'statics',
-]
+STATICFILES_DIRS = ['statics',]
+
+# Login
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = 'lista_pessoas'
+ 
+# Logout
+LOGOUT_URL = '/logout/'
+LOGOUT_REDIRECT_URL = '/login/'

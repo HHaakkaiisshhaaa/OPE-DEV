@@ -19,8 +19,8 @@ def lerDoBanco(nome):
         {'nome': 'Andrew', 'Idade': 1},
         ]
     for pessoa in lista_nomes:
-        if pessoax['nome'] == nome:
-            return pessoax
+        if pessoa['nome'] == nome:
+            return pessoa
     else: 
         return {'nome': 'não encontrado', 'idade': 0}
 

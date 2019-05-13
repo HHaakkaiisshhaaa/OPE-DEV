@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+        
+
+    <p id="mostra_msm"></p>
+
+    <script>
+    function funcao1()
+    {
+    var x;
+    var r=confirm("Deseja realmente excluir esse produto");
+    if (r==true)
+    {
+    x="Produto excluido com sucesso!";
+    }
+    else
+    {
+    x="Cancelado!";
+    }
+    document.getElementById("mostra_msm").innerHTML=x;
+    }
+    </script>
+   
+    <form method="POST">
+       
+            {% csrf_token %}  
+            {{ form }}
+            <button onclick="funcao1()">Deletar</button>
+        
+    </form>
+</body>
+</html>

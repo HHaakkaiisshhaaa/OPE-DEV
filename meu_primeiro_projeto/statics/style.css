@@ -1,3 +1,16 @@
 body{
+    background-color: white;
+}
+
+.form{
+    width: 450px;
+    height: 450px;
+    padding: 10px;
+    background-color: grey;
+
+
+}
+
+.linha_produto{
     background-color: grey;
 }

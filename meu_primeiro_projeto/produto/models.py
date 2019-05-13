@@ -14,4 +14,9 @@ class Pessoa(models.Model):
 
 
     
-    
+class Cliente(models.Model):
+    nome_cliente = models.CharField(max_length = 40)
+
+
+    def __str__(self):
+        return self.primeiro_nome +' '+ self.ultimo_nome
