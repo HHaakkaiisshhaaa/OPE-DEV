@@ -9,7 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="{% url 'home' %}">home</a>
+    <a href="{% url 'lista_produto' %}">Voltar</a>
+    
     <form method="POST">
        
         {% csrf_token %}  
@@ -17,5 +18,8 @@
         <button type="submit">Gravar</button>
         
     </form>
+    <div>
+            <footer class="footer">Produzido por: Binary Work Ltda.</footer>
+    </div>
 </body>
 </html>

@@ -1,5 +1,7 @@
 body{
 
+    background: #c9c6c6
+
 }
 
 .form{
@@ -16,16 +18,21 @@ h1{
 }
 
 .login{
-    margin-left: 300px; 
-    margin-right:300px;
-    margin-top: 200px;  
-    text-align: center;
+    position: relative;
+    float: left;
+    right: 0 px;
+    color: blue
+    
 
 }
 
 .logout{
-    margin-top: 10px;
-    margin-left: 10px;
+
+    position: relative;
+    float: rigth;
+    left: 1130px;
+    color: blue
+
 }
 
 
@@ -34,3 +41,21 @@ i{
     float: right;
     position: relative;
 }
+
+footer{
+       
+    height:30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height:30px;
+    color: rgb(196, 76, 76);
+    text-align: center;
+    padding: 10px 0 10 0;
+    margin: 0;
+    list-style: none;  
+    background-color: #111;
+    background-image: linear-gradient(#444, #111);
+   
+    box-shadow: 0 2px 1px #9c9c9c;
+  }

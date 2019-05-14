@@ -8,25 +8,28 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-    <title>Document</title>
+    <title>Produtos</title>
 </head>
 <body>
-    <a href="{% url 'home' %}">home</a>
-    <h1 class="titulo">Lista de Produtos</h1>
-    <a class="logout" href="{% url 'logout'%}">Logout</a><br><br><br>
-     
-        <tr>
-        {% for i in produtos %}
-            <th class="linha_produto" >{{i.nome_produto}} {{i.descricao_produto}}<a href="{% url 'update_produto' i.id %}"><i class='fas fa-edit'></i></a>
-            <a href="{% url 'delete_produto' i.id %}"><i class='far fa-trash-alt'></i></a></th><br>
-        {% endfor %}  
-        </tr>
-       
-        
+    <a class="login" href="{% url 'home' %}">Pagina Inicial</a>
+    <a class="logout" href="{% url 'logout'%}">Logout</a>
 
-    <a href="{% url 'novo_produto'%}"><button> Novo Produto</button></a>
     
+    <h1 class="titulo">Lista de Produtos</h1>
+    <a href="{% url 'novo_produto'%}"><button> Adicionar Produto</button></a><br><br>
+        
+            <tr>
+            {% for i in produtos %}
+                <th class="linha_produto" >{{i.nome_produto}} {{i.descricao_produto}} {{i.preco_compra}} {{i.quantidade_produto}}<a href="{% url 'update_produto' i.id %}"><i class='fas fa-edit'></i></a>
+                <a href="{% url 'delete_produto' i.id %}"><i class='far fa-trash-alt'></i></a></th><br>
+            {% endfor %}  
+            </tr>
+        
+            
     
+        <div>
+                <footer class="footer">Produzido por: Binary Work Ltda.</footer>
+        </div>
 
 </body>
 </html>
